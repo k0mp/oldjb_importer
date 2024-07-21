@@ -296,9 +296,9 @@ end)
 -- Open Frame
 
 ImageButton.MouseButton1Click:Connect(function()
-    if ScrollingFrame.Visible = false then
+    if ScrollingFrame.Visible == false then
         ScrollingFrame.Visible = true
-    elseif ScrollingFrame.Visible = true then
+    elseif ScrollingFrame.Visible == true then
         ScrollingFrame.Visible = false     
     end   
 end)
