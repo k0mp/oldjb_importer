@@ -177,7 +177,7 @@ game.StarterGui.SetCore("SendNotification", {
 
 -- Car Import
 
-TextButton:MouseButton1Click:Connect(function()
+TextButton.MouseButton1Click:Connect(function()
 	local playername = player.Name
 	local id = TextBox.Text
 
