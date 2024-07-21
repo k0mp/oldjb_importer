@@ -167,7 +167,7 @@ game.StarterGui:SetCore("SendNotification", {
     Icon = "http://www.roblox.com/asset/?id=6078133185";
     Duration = "7";
 })
-game.StarterGui.SetCore("SendNotification", {
+game.StarterGui:SetCore("SendNotification", {
     Title = "Us discord";
     Text = "no link";
     Icon = "rbxassetid://18505728201";
