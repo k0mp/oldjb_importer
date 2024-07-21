@@ -93,7 +93,6 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.130232424, 0, 0.0992063507, 0)
 ScrollingFrame.Size = UDim2.new(0, 417, 0, 216)
-ScrollingFrame.Visible = false
 
 TextLabel_2.Parent = ScrollingFrame
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
@@ -158,21 +157,21 @@ UICorner_8.Parent = TextLabel_2
 UICorner_9.Parent = ScrollingFrame
 
 UIGridLayout.Parent = ScrollingFrame
-UIGridLayout.Size = Udim2.new(0, 400, 0, 30)
+UIGridLayout.CellSize =  UDim2.new(0, 400, 0, 30)
 
 -- Notification
 
-game.StarterGui.SetCore("SendNotification", {
+game.StarterGui:SetCore("SendNotification", {
     Title = "This is a test build, v0.10";
     Text = "This build are unstable, recommended to wait release if it will :). You can report bugs on us discord. Also you can get chassis from it.";
     Icon = "http://www.roblox.com/asset/?id=6078133185";
-    Duration = "15";
+    Duration = "7";
 })
 game.StarterGui.SetCore("SendNotification", {
     Title = "Us discord";
     Text = "no link";
     Icon = "rbxassetid://18505728201";
-    Duration = "15";
+    Duration = "7";
 })
 
 -- Car Import
@@ -291,14 +290,4 @@ TextButton.MouseButton1Click:Connect(function()
 	else
     	warn("Couldn't load model with ID: " .. id)
 	end
-end)
-
--- Open Frame
-
-ImageButton.MouseButton1Click:Connect(function()
-    if ScrollingFrame.Visible == false then
-        ScrollingFrame.Visible = true
-    elseif ScrollingFrame.Visible == true then
-        ScrollingFrame.Visible = false     
-    end   
 end)
