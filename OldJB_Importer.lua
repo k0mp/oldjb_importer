@@ -1,6 +1,3 @@
---script
---loadstring(game:HttpGet(''))
-
 --By Si Fawn
 
 -- Instances:
